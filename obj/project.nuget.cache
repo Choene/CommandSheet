@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OrQNmVmsWUxKZYQCOMMa6evw3q62JlbBKO9RBqBPeFNJ71PzmBu4WPHaTg9xmLRmVsT5bdGVrlLZ0aFP2jsEEA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\choen\\source\\100daysofcsharp\\Day6\\CommandSheet\\CommandSheet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\choen\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}
