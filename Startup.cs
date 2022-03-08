@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CommandSheet.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +27,10 @@ namespace CommandSheet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //AddScoped Service lifetime
+            //which is created once per client request
+            services.AddScoped<ICommandSheetRepo, MockCommandSheetRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

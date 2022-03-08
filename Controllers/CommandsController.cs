@@ -9,7 +9,13 @@ namespace CommandSheet.Controllers
     [ApiController]
     public class CommandsController : ControllerBase
     {
-        private readonly MockCommandSheetRepo _repository = new MockCommandSheetRepo();
+        private readonly ICommandSheetRepo _repository;
+
+        public CommandsController(ICommandSheetRepo repository)
+        {
+            _repository = repository;
+        }
+        //private readonly MockCommandSheetRepo _repository = new MockCommandSheetRepo();
         [HttpGet]
         public ActionResult<IEnumerable<Command>> GetAllCommands()
         {
